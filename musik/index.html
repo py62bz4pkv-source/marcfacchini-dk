@@ -67,8 +67,8 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
 .photo img{display:block;width:100%;height:auto;border-radius:2px;background:var(--ph)}
 .credit{display:block;margin-top:.45rem;color:var(--muted);font-size:.78rem;letter-spacing:.02em}
 .tracks{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(1.25rem,3vw,2.5rem);padding-block:clamp(2rem,5vw,3.5rem) clamp(2.5rem,6vw,4rem)}
-.track{display:grid;grid-template-columns:minmax(0,1fr);gap:.75rem;align-content:start;text-decoration:none;min-width:0}
-@supports (grid-template-rows:subgrid){.tracks{row-gap:0}.track{grid-row:span 4;grid-template-rows:subgrid;row-gap:.75rem;padding-bottom:clamp(1.25rem,3vw,2.5rem)}.track h2{align-self:start}}
+.track{display:flex;flex-direction:column;gap:.75rem;text-decoration:none;min-width:0}
+.track .go{margin-top:auto;align-self:flex-start}
 .track img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:2px;background:var(--ph)}
 .track h2{font-family:var(--f-display);font-weight:800;font-size:clamp(1.45rem,2.6vw,2rem);line-height:1.05;letter-spacing:-.02em;margin:.25rem 0 0}
 .track .sub{color:var(--muted);font-size:.92rem;line-height:1.45}
